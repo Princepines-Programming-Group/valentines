@@ -9,7 +9,7 @@
 </head>
 <body>
 <script>
-    // request permission on page load
+    /* request permission on page load
     document.addEventListener('DOMContentLoaded', function () {
         if (!Notification) {
             alert('Desktop notifications not available in your browser. Try Chromium.');
@@ -18,7 +18,7 @@
 
         if (Notification.permission !== 'granted')
             Notification.requestPermission();
-    });
+    }); */
 
     function notifyMe() {
         let now = new Date();
@@ -42,7 +42,7 @@
 </script>
 <h1>My Love Letter for you</h1>
 <p>Hi, this is my love letter for you, thank you and i love you so much always</p>
-<p>i do have one more suprise for you, click the button below.</p>
+<p>i do have one more suprise for you, click the button below, and accept notifications, because i will remind you.</p>
 <button onclick="notifyMe()">My Gift (will reveal on Feb 14)</button>
 </body>
 </html>
