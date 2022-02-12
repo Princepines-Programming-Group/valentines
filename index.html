@@ -9,17 +9,6 @@
 </head>
 <body>
 <script>
-    /* request permission on page load
-    document.addEventListener('DOMContentLoaded', function () {
-        if (!Notification) {
-            alert('Desktop notifications not available in your browser. Try Chromium.');
-            return;
-        }
-
-        if (Notification.permission !== 'granted')
-            Notification.requestPermission();
-    }); */
-
     function notifyMe() {
         if (Notification.permission !== 'granted')
             Notification.requestPermission();
@@ -33,15 +22,13 @@
                     window.open('https://twitter.com/Lycol50/status/1492506419949879297?s=20&t=UFMUXg1SQV0mM1FUC-X7dQ');
                 };
             }
-            let newDate = loop.setDate(loop.getFullYear() + 1);
-            loop = new Date(newDate);
         }
     }
 </script>
 <h1>My Love Letter for you</h1>
 <p>Hi, this is my love letter for you, thank you and i love you so much always</p>
 <p>i do have one more suprise for you, click the button below.</p>
-<button onclick="notifyMe()">My Gift
+<button onclick="notifyMe()">My Gift for you
 </button>
 </body>
 </html>
