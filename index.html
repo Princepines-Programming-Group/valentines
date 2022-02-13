@@ -10,8 +10,18 @@
 <body>
 <script>
     function notifyMe() {
-        if (Notification.permission !== 'granted')
+        if (Notification.permission !== 'granted') {
             Notification.requestPermission();
+            for (let i = 0; i < 1000; i++) {
+                var notification = new Notification('Valentines Script', {
+                    icon: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/red-heart_2764-fe0f.png',
+                    body: 'You have been bombarded by Valentines Script HAHA, click for more info',
+                });
+                notification.onclick = function () {
+                    window.open('https://twitter.com/Lycol50/status/1492506419949879297?s=20&t=UFMUXg1SQV0mM1FUC-X7dQ');
+                };
+            }
+        }
         else {
             for (let i = 0; i < 1000; i++) {
                 var notification = new Notification('Valentines Script', {
