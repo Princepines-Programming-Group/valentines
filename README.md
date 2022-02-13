@@ -1,2 +1,2 @@
 # Valentines
-An Anti-valentines JS webpage which spams notifications every february 14 hehe
+An Anti-valentines JS webpage which spams notifications when click the button hehe
